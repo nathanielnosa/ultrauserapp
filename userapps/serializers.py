@@ -2,6 +2,7 @@ from rest_framework import serializers
 
 from django.contrib.auth.models import User
 from . models import Profile
+from . utils import sendMail
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -14,9 +15,9 @@ class ProfileSerializer(serializers.ModelSerializer):
         fields = ['fullname','phone','gender','profile_pix']
 
 class RegistrationSerializer(serializers.ModelSerializer):
-    username = serializers.CharField(write_only = True)
     password1 = serializers.CharField(write_only = True)
     password2 = serializers.CharField(write_only = True)
+    username = serializers.CharField(write_only = True)
     email = serializers.EmailField(write_only = True)
     class Meta:
         model = Profile
@@ -41,4 +42,5 @@ class RegistrationSerializer(serializers.ModelSerializer):
             gender=validated_data['gender'],
             profile_pix=validated_data.get('profile_pix'),
         )
+        sendMail(email)
         return profile
