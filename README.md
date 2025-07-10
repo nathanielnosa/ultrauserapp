@@ -17,7 +17,7 @@
 ## local - http://localhost:8000/api/logout/
 ## server - https://ultrauserapp.onrender.com/api/logout/
 
-<img width="1345" height="637" alt="image" src="https://github.com/user-attachments/assets/b3b42b9e-b7a6-42ce-a7ce-fdb0e4e0795e" />
+<img width="1349" height="1011" alt="image" src="https://github.com/user-attachments/assets/95e21f33-dd6f-40d9-8efb-23de4757047a" />
 
 
 
