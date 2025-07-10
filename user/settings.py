@@ -17,7 +17,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://ultrauserapp.onrender.com']
+ALLOWED_HOSTS = ['https://ultrauserapp.onrender.com','ultrauserapp.onrender.com','http://ultrauserapp.onrender.com']
 
 
 # Application definition
